@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<h1>Programa calcular IMC</h1>
+
+<script>
+function saltarLinea() {
+
+    document.write("<br>");    
+    document.write("<br>");    
+    document.write("<br>");
+}
+
+function imprimir(frase) {
+
+    document.write(frase);
+    saltarLinea();
+}
+
+
+function calcularIMC(peso, altura){
+
+    return (peso / (altura * altura));
+}
+
+pesoInf = prompt("Informe su peso: ");
+alturaInf = prompt("Informe su altura: ");
+
+//imprimir("El promedio de IMC entre Mamba y Nina es: " + (calcularIMC(35, 1.40) + calcularIMC(15, 1.20))/2);
+
+imprimir("Su IMC en base a un peso de " + pesoInf + " kilos y una altura de " + alturaInf + " mts. es de: " + calcularIMC(pesoInf, alturaInf));
+
+</script>
